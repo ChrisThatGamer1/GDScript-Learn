@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://cs7l5i24a4g7r"]
+[gd_scene load_steps=2 format=3 uid="uid://cs7l5i24a4g7r"]
+
+[sub_resource type="GDScript" id="GDScript_rt8gv"]
+script/source = "extends Node
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(\"Hello, World\")
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="Main" type="Node"]
+script = SubResource("GDScript_rt8gv")
