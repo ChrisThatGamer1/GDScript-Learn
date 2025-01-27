@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbrtb2mukt22"]
+
+[ext_resource type="Texture2D" uid="uid://cx00okyv6y7ik" path="res://DarkSamurai (64x64).png" id="1_qxqwb"]
+
+[sub_resource type="GDScript" id="GDScript_awn0k"]
+script/source = "extends Sprite2D
+
+# for character the sprite is 8 x 14 
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Player" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_qxqwb")
+hframes = 14
+vframes = 8
+script = SubResource("GDScript_awn0k")
+
+[node name="PlayerAnimation" type="AnimationPlayer" parent="."]
